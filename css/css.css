@@ -1,0 +1,114 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* skrifttype */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* skriftstørrelse */
+  font-size: 1.5rem;
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+/* Overskriftens farve + centret */
+h1 {
+  color: rgb(251, 251, 251);
+  text-align: center;
+  line-height: 20cm;
+  font-size: 5cm;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+  color: rgb(247, 112, 202);
+}
+
+p {
+  color: rgb(46, 13, 13);
+}
+
+/* Billeder i 100% */
+img{
+  width: 100%;
+}
+
+.flex{
+  display:flex;
+}
+
+#topNav {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  height: 10vh;
+  font-size: 50px;
+}
+
+#topNav a {
+  color: #000000;
+}
+
+#topNav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* hero sektionen styles */
+header {
+height: 100vh;
+background-color: rgb(255, 255, 255);
+background-image: url('../images/hero.png');
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  h1 {text-align: center;}
+  h1 {
+  font-size: 100px;
+}
+}
+
+/* RESPONSIVT DESIGN */
+
+/* mobile enheder (op til 600px)*/
+@media (max-width:600px){
+  body{
+    background-color: blue;
+  }
+  #stemning{
+    display: block;
+  }
+}
+
+/* Tablets, iPads, &c. (601px til 1024px) */
+@media (min-width:601px) and (max-width:1024px){
+   body{
+    background-color: rgb(245, 198, 151);
+  }
+  #stemning{
+    display: block;
+}
+}
